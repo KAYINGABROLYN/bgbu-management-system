@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Registry - BGBU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/bgbu-logo.png" alt="BGBU Logo" class="logo">
+            <h1>Boys' and Girls' Brigade of Uganda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="east-africa.html">East Africa Fellowship</a></li>
+                <li><a href="national-office.html">National Office</a></li>
+                <li><a href="field-offices.html">Field Offices</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>National Registry</h1>
+            <p>Register new members and manage subscriptions</p>
+        </section>
+
+        <section class="content-section">
+            <article>
+                <h2>New Member Registration</h2>
+                <p>Use this form to register new members for the Boys' and Girls' Brigade of Uganda. All fields are required unless marked optional.</p>
+                
+                <div class="registration-form">
+                    <form id="member-registration">
+                        <div class="form-tabs">
+                            <button type="button" class="form-tab active" data-tab="personal">Personal Info</button>
+                            <button type="button" class="form-tab" data-tab="membership">Membership</button>
+                            <button type="button" class="form-tab" data-tab="payment">Payment</button>
+                            <button type="button" class="form-tab" data-tab="review">Review</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="personal-tab">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reg-firstname">First Name</label>
+                                    <input type="text" id="reg-firstname" name="firstname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-lastname">Last Name</label>
+                                    <input type="text" id="reg-lastname" name="lastname" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reg-dob">Date of Birth</label>
+                                    <input type="date" id="reg-dob" name="dob" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-gender">Gender</label>
+                                    <select id="reg-gender" name="gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                        <option value="prefer-not">Prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reg-email">Email Address</label>
+                                    <input type="email" id="reg-email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-phone">Phone Number</label>
+                                    <input type="tel" id="reg-phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-address">Physical Address</label>
+                                <textarea id="reg-address" name="address" rows="3" required></textarea>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reg-district">District of Residence</label>
+                                    <input type="text" id="reg-district" name="district" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-parish">Parish/Village (optional)</label>
+                                    <input type="text" id="reg-parish" name="parish">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-photo">Upload Photo (optional)</label>
+                                <input type="file" id="reg-photo" name="photo" accept="image/*">
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="next-btn">Next: Membership Info</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="membership-tab">
+                            <div class="form-group">
+                                <label for="reg-category">Member Category</label>
+                                <select id="reg-category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="junior">Junior Member (6-12 years)</option>
+                                    <option value="senior">Senior Member (13-18 years)</option>
+                                    <option value="officer">Officer (18+ years)</option>
+                                    <option value="volunteer">Volunteer (18+ years)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reg-battalion">Battalion/District</label>
+                                    <select id="reg-battalion" name="battalion" required>
+                                        <option value="">Select Battalion</option>
+                                        <!-- Battalions will be loaded via JavaScript -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-company">Company Unit (optional)</label>
+                                    <input type="text" id="reg-company" name="company">
+                                    <small>If you know the specific church/community unit</small>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-archdeaconry">Archdeaconry (optional)</label>
+                                <input type="text" id="reg-archdeaconry" name="archdeaconry">
+                                <small>For Church of Uganda-affiliated units</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Previous Brigade Experience (if any)</label>
+                                <div class="checkbox-group">
+                                    <label>
+                                        <input type="checkbox" name="previous_bb" value="1">
+                                        Previously in Boys' Brigade
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="previous_gb" value="1">
+                                        Previously in Girls' Brigade
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="previous_other" value="1">
+                                        Other uniformed organization
+                                    </label>
+                                </div>
+                                <textarea name="previous_details" placeholder="Provide details if applicable" rows="2"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-reason">Reason for Joining (optional)</label>
+                                <textarea id="reg-reason" name="reason" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="prev-btn">Previous</button>
+                                <button type="button" class="next-btn">Next: Payment</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="payment-tab">
+                            <div class="payment-summary">
+                                <h3>Membership Subscription</h3>
+                                <p>All new members must pay the annual subscription fee. Fees are used to support Brigade activities at all levels.</p>
+                                
+                                <div class="fee-display">
+                                    <p>Selected Membership Category: <strong id="fee-category">Junior Member</strong></p>
+                                    <p>Annual Subscription Fee: <strong id="fee-amount">UGX 10,000</strong></p>
+                                    <p class="fee-note">Fee waivers available for those with financial constraints. Contact your local unit leader.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reg-payment-method">Payment Method</label>
+                                <select id="reg-payment-method" name="payment_method" required>
+                                    <option value="">Select Payment Method</option>
+                                    <option value="mobile">Mobile Money</option>
+                                    <option value="bank">Bank Transfer</option>
+                                    <option value="cash">Cash (at local unit)</option>
+                                    <option value="waiver">Requesting Fee Waiver</option>
+                                </select>
+                            </div>
+                            
+                            <div class="payment-details" id="mobile-details">
+                                <h4>Mobile Money Payment</h4>
+                                <p>Please use one of the following numbers:</p>
+                                <ul>
+                                    <li>MTN: 0772 123 456 (BGBU Subscriptions)</li>
+                                    <li>Airtel: 0752 123 456 (BGBU Subscriptions)</li>
+                                </ul>
+                                <div class="form-group">
+                                    <label for="reg-mobile-number">Your Mobile Number</label>
+                                    <input type="tel" id="reg-mobile-number" name="mobile_number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-transaction">Transaction ID/Reference</label>
+                                    <input type="text" id="reg-transaction" name="transaction_id" required>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-details" id="bank-details">
+                                <h4>Bank Transfer Payment</h4>
+                                <p>Transfer to our bank account:</p>
+                                <ul>
+                                    <li>Bank: Centenary Bank</li>
+                                    <li>Account Name: BGBU Subscriptions</li>
+                                    <li>Account Number: 1234567890</li>
+                                    <li>Branch: Kampala Main</li>
+                                </ul>
+                                <div class="form-group">
+                                    <label for="reg-bank-reference">Bank Reference Number</label>
+                                    <input type="text" id="reg-bank-reference" name="bank_reference" required>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-details" id="waiver-details">
+                                <h4>Fee Waiver Request</h4>
+                                <p>Please explain why you are requesting a fee waiver:</p>
+                                <div class="form-group">
+                                    <textarea id="reg-waiver-reason" name="waiver_reason" rows="3" required></textarea>
+                                </div>
+                                <p>Your request will be reviewed by your local unit leader. You will be notified of the decision within 2 weeks.</p>
+                            </div>
+                            
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="reg-agree" name="agree" required>
+                                <label for="reg-agree">I agree to abide by the <a href="#">BGBU Constitution</a> and <a href="#">Code of Conduct</a></label>
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="prev-btn">Previous</button>
+                                <button type="button" class="next-btn">Next: Review</button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="review-tab">
+                            <h3>Review Your Information</h3>
+                            <p>Please review all information before submitting your registration.</p>
+                            
+                            <div class="review-section">
+                                <h4>Personal Information</h4>
+                                <div class="review-row">
+                                    <p><strong>Full Name:</strong> <span id="review-name"></span></p>
+                                    <p><strong>Date of Birth:</strong> <span id="review-dob"></span></p>
+                                </div>
+                                <div class="review-row">
+                                    <p><strong>Gender:</strong> <span id="review-gender"></span></p>
+                                    <p><strong>Phone:</strong> <span id="review-phone"></span></p>
+                                </div>
+                                <p><strong>Address:</strong> <span id="review-address"></span></p>
+                                <p><strong>District:</strong> <span id="review-district"></span></p>
+                            </div>
+                            
+                            <div class="review-section">
+                                <h4>Membership Information</h4>
+                                <div class="review-row">
+                                    <p><strong>Member Category:</strong> <span id="review-category"></span></p>
+                                    <p><strong>Battalion:</strong> <span id="review-battalion"></span></p>
+                                </div>
+                                <p><strong>Company Unit:</strong> <span id="review-company"></span></p>
+                                <p><strong>Previous Experience:</strong> <span id="review-previous"></span></p>
+                            </div>
+                            
+                            <div class="review-section">
+                                <h4>Payment Information</h4>
+                                <p><strong>Subscription Fee:</strong> <span id="review-fee"></span></p>
+                                <p><strong>Payment Method:</strong> <span id="review-method"></span></p>
+                                <div id="review-payment-details"></div>
+                            </div>
+                            
+                            <div class="form-navigation">
+                                <button type="button" class="prev-btn">Previous</button>
+                                <button type="submit" class="submit-btn">Submit Registration</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <h2>Existing Member Subscription Payment</h2>
+                <p>If you are already a registered member of BGBU, use this form to pay your annual subscription fee.</p>
+                
+                <div class="subscription-form">
+                    <form id="existing-member-payment">
+                        <div class="form-group">
+                            <label for="existing-id">BGBU Member ID</label>
+                            <input type="text" id="existing-id" name="member_id" required>
+                            <small>Format: BGBU-YYYY-XXXXX</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="existing-name">Full Name</label>
+                            <input type="text" id="existing-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="existing-category">Member Category</label>
+                            <select id="existing-category" name="category" required>
+                                <option value="">Select Category</option>
+                                <option value="junior">Junior Member (UGX 10,000)</option>
+                                <option value="senior">Senior Member (UGX 15,000)</option>
+                                <option value="officer">Officer (UGX 20,000)</option>
+                                <option value="volunteer">Volunteer (UGX 10,000)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="existing-battalion">Battalion/District</label>
+                            <input type="text" id="existing-battalion" name="battalion" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="existing-company">Company Unit (optional)</label>
+                            <input type="text" id="existing-company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="existing-method">Payment Method</label>
+                            <select id="existing-method" name="payment_method" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="mobile">Mobile Money</option>
+                                <option value="bank">Bank Transfer</option>
+                                <option value="cash">Cash (at local unit)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="payment-details" id="existing-mobile-details">
+                            <h4>Mobile Money Payment</h4>
+                            <p>Please use one of the following numbers:</p>
+                            <ul>
+                                <li>MTN: 0772 123 456 (BGBU Subscriptions)</li>
+                                <li>Airtel: 0752 123 456 (BGBU Subscriptions)</li>
+                            </ul>
+                            <div class="form-group">
+                                <label for="existing-mobile-number">Your Mobile Number</label>
+                                <input type="tel" id="existing-mobile-number" name="mobile_number">
+                            </div>
+                            <div class="form-group">
+                                <label for="existing-transaction">Transaction ID/Reference</label>
+                                <input type="text" id="existing-transaction" name="transaction_id" required>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-details" id="existing-bank-details">
+                            <h4>Bank Transfer Payment</h4>
+                            <p>Transfer to our bank account:</p>
+                            <ul>
+                                <li>Bank: Centenary Bank</li>
+                                <li>Account Name: BGBU Subscriptions</li>
+                                <li>Account Number: 1234567890</li>
+                                <li>Branch: Kampala Main</li>
+                            </ul>
+                            <div class="form-group">
+                                <label for="existing-bank-reference">Bank Reference Number</label>
+                                <input type="text" id="existing-bank-reference" name="bank_reference" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="existing-receipt" name="receipt" checked>
+                            <label for="existing-receipt">Email me a payment receipt</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Payment</button>
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <h2>Registration FAQs</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">How long does registration take to process?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>New member registrations are typically processed within 7-10 working days. You will receive your official BGBU Member ID via SMS or email once processed. Subscription payments for existing members are processed within 3-5 working days.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I register at my local unit instead?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, you can register in person at any BGBU company unit. Local leaders have paper registration forms and can assist with the process. Your information will then be submitted to the national registry.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What documents do I need to register?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>For junior members (under 18), we require parental consent which can be provided digitally during online registration or via a signed form for in-person registration. Officers and volunteers must provide two references and may need to complete additional screening.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How do I know if my fee waiver was approved?<span class="faq-question">How do I know if my fee waiver was approved?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Fee waiver requests are reviewed by your local battalion leadership. You will be contacted via phone or email within 2 weeks of submission. If approved, you'll receive confirmation and can participate fully without payment. If denied, you'll be given options for payment plans or other assistance.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">I lost my BGBU Member ID. How can I retrieve it?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>If you've lost your Member ID, contact your company or battalion leader who can look up your information in our system. You can also email registry@bgbu.org with your full name, phone number, and battalion information to request your ID.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: registry@bgbu.org</p>
+                <p>Phone: +256 123 456 789</p>
+                <p>Address: BGBU National Office, Kampala, Uganda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About BGBU</a></li>
+                    <li><a href="membership.html">Become a Member</a></li>
+                    <li><a href="subscription.html">Pay Subscription</a></li>
+                    <li><a href="conference.html">Annual Conference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Boys' and Girls' Brigade of Uganda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

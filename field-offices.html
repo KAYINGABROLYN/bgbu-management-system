@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Offices - BGBU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/bgbu-logo.png" alt="BGBU Logo" class="logo">
+            <h1>Boys' and Girls' Brigade of Uganda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="east-africa.html">East Africa Fellowship</a></li>
+                <li><a href="national-office.html">National Office</a></li>
+                <li><a href="field-offices.html" class="active">Field Offices</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>BGBU Field Offices</h1>
+            <p>Connecting with our members across Uganda</p>
+        </section>
+
+        <section class="content-section">
+            <article>
+                <h2>Our Field Structure</h2>
+                <p>The Boys' and Girls' Brigade of Uganda operates through a network of field offices across the country to ensure effective coordination and support for our local units.</p>
+                
+                <div class="structure-levels">
+                    <div class="level">
+                        <h3>Regional Offices</h3>
+                        <p>Coordinate activities across multiple districts within a region</p>
+                    </div>
+                    <div class="level">
+                        <h3>Battalion Offices</h3>
+                        <p>District-level offices overseeing local company units</p>
+                    </div>
+                    <div class="level">
+                        <h3>Company Units</h3>
+                        <p>Local implementation units based in churches or communities</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Regional Offices</h2>
+                <div class="region-filter">
+                    <label for="region-select">Filter by Region:</label>
+                    <select id="region-select">
+                        <option value="all">All Regions</option>
+                        <option value="central">Central Region</option>
+                        <option value="eastern">Eastern Region</option>
+                        <option value="northern">Northern Region</option>
+                        <option value="western">Western Region</option>
+                    </select>
+                </div>
+                
+                <div class="region-grid" id="region-container">
+                    <!-- Regions will be loaded via JavaScript -->
+                </div>
+            </article>
+
+            <article>
+                <h2>Find Your Nearest Battalion</h2>
+                <div class="battalion-search">
+                    <input type="text" id="battalion-search" placeholder="Enter your district...">
+                    <button id="search-btn">Search</button>
+                </div>
+                
+                <div class="battalion-results" id="battalion-results">
+                    <!-- Search results will appear here -->
+                </div>
+            </article>
+
+            <article>
+                <h2>Field Office Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>Field Officer Handbook</h3>
+                        <p>Comprehensive guide for regional and battalion officers</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Monthly Reporting Forms</h3>
+                        <p>Templates for field activity reports</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Field Finance Guidelines</h3>
+                        <p>Procedures for managing funds at field level</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Field Visit Checklist</h3>
+                        <p>Tool for national officers visiting field offices</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Field Office News & Updates</h2>
+                <div class="news-grid" id="field-news">
+                    <!-- News items will be loaded via JavaScript -->
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: field@bgbu.org</p>
+                <p>Phone: +256 123 456 789</p>
+                <p>Address: BGBU National Office, Kampala, Uganda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About BGBU</a></li>
+                    <li><a href="membership.html">Become a Member</a></li>
+                    <li><a href="subscription.html">Pay Subscription</a></li>
+                    <li><a href="conference.html">Annual Conference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Boys' and Girls' Brigade of Uganda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

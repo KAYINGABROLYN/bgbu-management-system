@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferences - BGBU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/bgbu-logo.png" alt="BGBU Logo" class="logo">
+            <h1>Boys' and Girls' Brigade of Uganda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="east-africa.html">East Africa Fellowship</a></li>
+                <li><a href="national-office.html">National Office</a></li>
+                <li><a href="field-offices.html">Field Offices</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>BGBU Conferences & Events</h1>
+            <p>Gathering together for fellowship, learning, and celebration</p>
+        </section>
+
+        <section class="content-section">
+            <article>
+                <h2>Upcoming Conferences</h2>
+                <div class="conference-grid" id="upcoming-conferences">
+                    <!-- Conferences will be loaded via JavaScript -->
+                </div>
+            </article>
+
+            <article>
+                <h2>Annual National Conference</h2>
+                <p>The BGBU Annual National Conference is our flagship event, bringing together members from across Uganda for worship, training, fellowship, and decision-making.</p>
+                
+                <div class="conference-highlights">
+                    <div class="highlight-card">
+                        <img src="images/worship-icon.png" alt="Worship">
+                        <h3>Worship & Prayer</h3>
+                        <p>Powerful times of collective worship and intercession</p>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="images/training-icon.png" alt="Training">
+                        <h3>Leadership Training</h3>
+                        <p>Sessions for officers and senior members</p>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="images/business-icon.png" alt="Business">
+                        <h3>National Council Meeting</h3>
+                        <p>Decision-making for the Brigade's direction</p>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="images/fellowship-icon.png" alt="Fellowship">
+                        <h3>Fellowship</h3>
+                        <p>Building relationships across regions</p>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="images/awards-icon.png" alt="Awards">
+                        <h3>Awards Ceremony</h3>
+                        <p>Recognizing outstanding members and units</p>
+                    </div>
+                    <div class="highlight-card">
+                        <img src="images/fun-icon.png" alt="Fun">
+                        <h3>Fun Activities</h3>
+                        <p>Games, talent shows, and cultural events</p>
+                    </div>
+                </div>
+                
+                <div class="past-conference">
+                    <h3>2023 Conference Recap</h3>
+                    <div class="recap-container">
+                        <div class="recap-stats">
+                            <div class="stat">
+                                <p class="number">1,200+</p>
+                                <p class="label">Participants</p>
+                            </div>
+                            <div class="stat">
+                                <p class="number">45</p>
+                                <p class="label">Districts Represented</p>
+                            </div>
+                            <div class="stat">
+                                <p class="number">28</p>
+                                <p class="label">Training Sessions</p>
+                            </div>
+                            <div class="stat">
+                                <p class="number">15</p>
+                                <p class="label">Community Service Projects</p>
+                            </div>
+                        </div>
+                        <div class="recap-video">
+                            <div class="video-placeholder">
+                                <img src="images/video-thumbnail.jpg" alt="Conference Video">
+                                <button class="play-btn">▶</button>
+                            </div>
+                            <p>Watch highlights from our 2023 conference</p>
+                        </div>
+                        <div class="recap-gallery">
+                            <h4>Photo Gallery</h4>
+                            <div class="gallery-grid">
+                                <img src="images/conference1.jpg" alt="Conference Photo">
+                                <img src="images/conference2.jpg" alt="Conference Photo">
+                                <img src="images/conference3.jpg" alt="Conference Photo">
+                                <img src="images/conference4.jpg" alt="Conference Photo">
+                            </div>
+                            <a href="#" class="view-more">View More Photos</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Regional Conferences</h2>
+                <p>Throughout the year, BGBU holds regional conferences to provide more localized training and fellowship opportunities.</p>
+                
+                <div class="region-tabs">
+                    <button class="region-tab active" data-region="central">Central Region</button>
+                    <button class="region-tab" data-region="eastern">Eastern Region</button>
+                    <button class="region-tab" data-region="northern">Northern Region</button>
+                    <button class="region-tab" data-region="western">Western Region</button>
+                </div>
+                
+                <div class="region-conference active" id="central-conference">
+                    <h3>Central Region Conference</h3>
+                    <p><strong>Next Conference:</strong> June 15-17, 2024</p>
+                    <p><strong>Location:</strong> Kampala Secondary School</p>
+                    <p><strong>Theme:</strong> "Equipped to Serve"</p>
+                    <p><strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Leadership workshops for battalion officers</li>
+                        <li>Youth empowerment sessions</li>
+                        <li>Inter-district competitions</li>
+                        <li>Community outreach in Kampala</li>
+                    </ul>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+                
+                <div class="region-conference" id="eastern-conference">
+                    <h3>Eastern Region Conference</h3>
+                    <p><strong>Next Conference:</strong> August 5-7, 2024</p>
+                    <p><strong>Location:</strong> Mbale High School</p>
+                    <p><strong>Theme:</strong> "Rooted in Christ"</p>
+                    <p><strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Bible exposition sessions</li>
+                        <li>Cultural exchange program</li>
+                        <li>Hiking expedition to Mount Elgon</li>
+                        <li>Agricultural skills workshop</li>
+                    </ul>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+                
+                <div class="region-conference" id="northern-conference">
+                    <h3>Northern Region Conference</h3>
+                    <p><strong>Next Conference:</strong> September 10-12, 2024</p>
+                    <p><strong>Location:</strong> Gulu University</p>
+                    <p><strong>Theme:</strong> "Agents of Peace"</p>
+                    <p><strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Peace-building workshops</li>
+                        <li>Reconciliation and healing sessions</li>
+                        <li>Sports tournament</li>
+                        <li>Vocational skills training</li>
+                    </ul>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+                
+                <div class="region-conference" id="western-conference">
+                    <h3>Western Region Conference</h3>
+                    <p><strong>Next Conference:</strong> November 3-5, 2024</p>
+                    <p><strong>Location:</strong> Mbarara High School</p>
+                    <p><strong>Theme:</strong> "Called to Lead"</p>
+                    <p><strong>Highlights:</strong></p>
+                    <ul>
+                        <li>Advanced leadership training</li>
+                        <li>Entrepreneurship workshops</li>
+                        <li>Lake Bunyonyi excursion</li>
+                        <li>Cultural night showcasing western traditions</li>
+                    </ul>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </article>
+
+            <article>
+                <h2>Conference Registration</h2>
+                <div class="registration-container">
+                    <div class="registration-info">
+                        <h3>Registration Process</h3>
+                        <ol>
+                            <li>Complete the online registration form below</li>
+                            <li>Pay the registration fee through provided methods</li>
+                            <li>Receive confirmation email with event details</li>
+                            <li>Print or save your registration ticket</li>
+                            <li>Bring ticket and BGBU ID to conference check-in</li>
+                        </ol>
+                        
+                        <h3>Registration Fees</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Member Category</th>
+                                    <th>Early Bird (Before 1 month)</th>
+                                    <th>Regular</th>
+                                    <th>On-Site</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Junior Members</td>
+                                    <td>UGX 25,000</td>
+                                    <td>UGX 30,000</td>
+                                    <td>UGX 35,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Members</td>
+                                    <td>UGX 35,000</td>
+                                    <td>UGX 40,000</td>
+                                    <td>UGX 45,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Officers</td>
+                                    <td>UGX 50,000</td>
+                                    <td>UGX 60,000</td>
+                                    <td>UGX 70,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><em>Fees include conference materials, meals, and accommodation. Transportation not included.</em></p>
+                        
+                        <h3>Scholarships</h3>
+                        <p>Limited scholarships are available for members with financial need. Contact your battalion commander for application information at least 2 months before the conference date.</p>
+                    </div>
+                    
+                    <div class="registration-form">
+                        <form id="conference-registration">
+                            <h3>Register for Conference</h3>
+                            
+                            <div class="form-group">
+                                <label for="conf-name">Full Name</label>
+                                <input type="text" id="conf-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="conf-email">Email</label>
+                                    <input type="email" id="conf-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="conf-phone">Phone</label>
+                                    <input type="tel" id="conf-phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="conf-member-id">BGBU Member ID</label>
+                                <input type="text" id="conf-member-id" name="member_id" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="conf-category">Member Category</label>
+                                    <select id="conf-category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="junior">Junior Member</option>
+                                        <option value="senior">Senior Member</option>
+                                        <option value="officer">Officer</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="conf-battalion">Battalion/District</label>
+                                    <input type="text" id="conf-battalion" name="battalion" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="conf-event">Select Conference</label>
+                                <select id="conf-event" name="event" required>
+                                    <option value="">Select Conference</option>
+                                    <option value="national">National Conference - March 2024</option>
+                                    <option value="central">Central Region Conference - June 2024</option>
+                                    <option value="eastern">Eastern Region Conference - August 2024</option>
+                                    <option value="northern">Northern Region Conference - September 2024</option>
+                                    <option value="western">Western Region Conference - November 2024</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="conf-accommodation">Accommodation Needs</label>
+                                <select id="conf-accommodation" name="accommodation" required>
+                                    <option value="">Select Option</option>
+                                    <option value="provided">I will use provided accommodation</option>
+                                    <option value="own">I will arrange my own accommodation</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="conf-dietary">Dietary Restrictions</label>
+                                <textarea id="conf-dietary" name="dietary" rows="2" placeholder="List any food allergies or special dietary needs"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="conf-special">Special Needs</label>
+                                <textarea id="conf-special" name="special" rows="2" placeholder="Any physical or other needs we should be aware of"></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="conf-waiver" name="waiver" required>
+                                <label for="conf-waiver">I agree to the <a href="#">event waiver and release of liability</a></label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Submit Registration</button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Conference Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>Conference Planning Guide</h3>
+                        <p>For officers organizing regional conferences</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Past Conference Reports</h3>
+                        <p>Archive of previous conference summaries</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Speaker Guidelines</h3>
+                        <p>Information for conference presenters</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Volunteer Handbook</h3>
+                        <p>Guide for conference volunteers</p>
+                        <a href="#" class="download-btn">Download</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: events@bgbu.org</p>
+                <p>Phone: +256 123 456 789</p>
+                <p>Address: BGBU National Office, Kampala, Uganda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About BGBU</a></li>
+                    <li><a href="membership.html">Become a Member</a></li>
+                    <li><a href="subscription.html">Pay Subscription</a></li>
+                    <li><a href="conference.html">Annual Conference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Boys' and Girls' Brigade of Uganda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

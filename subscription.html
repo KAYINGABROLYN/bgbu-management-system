@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription - BGBU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/bgbu-logo.png" alt="BGBU Logo" class="logo">
+            <h1>Boys' and Girls' Brigade of Uganda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="east-africa.html">East Africa Fellowship</a></li>
+                <li><a href="national-office.html">National Office</a></li>
+                <li><a href="field-offices.html">Field Offices</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="subscription.html" class="active">Subscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>BGBU Membership Subscription</h1>
+            <p>Supporting our mission through membership contributions</p>
+        </section>
+
+        <section class="content-section">
+            <article>
+                <h2>Subscription Fees</h2>
+                <p>Annual membership fees help support the operations of the Brigade at all levels, from local company units to national programs. Fees are kept affordable and waivers are available for those with financial constraints.</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Junior Members</h3>
+                        <p class="price">UGX 10,000<span>/year</span></p>
+                        <p>Ages 6-12 years</p>
+                        <ul>
+                            <li>Weekly meetings</li>
+                            <li>Basic training</li>
+                            <li>Activity participation</li>
+                            <li>Badge program</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="featured-badge">Most Popular</div>
+                        <h3>Senior Members</h3>
+                        <p class="price">UGX 15,000<span>/year</span></p>
+                        <p>Ages 13-18 years</p>
+                        <ul>
+                            <li>All junior benefits</li>
+                            <li>Leadership training</li>
+                            <li>Advanced programs</li>
+                            <li>Service opportunities</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Officers</h3>
+                        <p class="price">UGX 20,000<span>/year</span></p>
+                        <p>Adult leaders</p>
+                        <ul>
+                            <li>All senior benefits</li>
+                            <li>Voting rights</li>
+                            <li>Officer training</li>
+                            <li>Leadership roles</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fee-waiver">
+                    <h3>Fee Waiver Program</h3>
+                    <p>BGBU believes financial constraints should not prevent anyone from participating. Fee waivers are available for members who demonstrate need. Contact your local unit leader or <a href="mailto:membership@bgbu.org">membership@bgbu.org</a> for more information.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Payment Methods</h2>
+                <p>You can pay your subscription fees through any of the following convenient methods:</p>
+                
+                <div class="payment-methods">
+                    <div class="method-card">
+                        <img src="images/mobile-money.png" alt="Mobile Money">
+                        <h3>Mobile Money</h3>
+                        <p>Pay directly to our official BGBU accounts:</p>
+                        <ul>
+                            <li>MTN: 0772 123 456 (BGBU Subscriptions)</li>
+                            <li>Airtel: 0752 123 456 (BGBU Subscriptions)</li>
+                        </ul>
+                        <p>Include your name and member ID as reference</p>
+                    </div>
+                    <div class="method-card">
+                        <img src="images/bank-transfer.png" alt="Bank Transfer">
+                        <h3>Bank Transfer</h3>
+                        <p>Transfer to our bank account:</p>
+                        <ul>
+                            <li>Bank: Centenary Bank</li>
+                            <li>Account Name: BGBU Subscriptions</li>
+                            <li>Account Number: 1234567890</li>
+                            <li>Branch: Kampala Main</li>
+                        </ul>
+                        <p>Include your name and member ID as reference</p>
+                    </div>
+                    <div class="method-card">
+                        <img src="images/cash-payment.png" alt="Cash Payment">
+                        <h3>Cash Payment</h3>
+                        <p>Pay directly to:</p>
+                        <ul>
+                            <li>Your local company treasurer</li>
+                            <li>Battalion or regional offices</li>
+                            <li>National office in Kampala</li>
+                        </ul>
+                        <p>Always request a receipt for cash payments</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Online Payment Portal</h2>
+                <p>Pay your subscription fees securely online through our payment portal:</p>
+                
+                <div class="payment-portal">
+                    <form id="subscription-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sub-name">Full Name</label>
+                                <input type="text" id="sub-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sub-email">Email Address</label>
+                                <input type="email" id="sub-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sub-phone">Phone Number</label>
+                                <input type="tel" id="sub-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sub-member-id">BGBU Member ID</label>
+                                <input type="text" id="sub-member-id" name="member_id">
+                                <small>If you don't have one yet, leave blank</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sub-category">Member Category</label>
+                                <select id="sub-category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="junior">Junior Member (UGX 10,000)</option>
+                                    <option value="senior">Senior Member (UGX 15,000)</option>
+                                    <option value="officer">Officer (UGX 20,000)</option>
+                                    <option value="volunteer">Volunteer (UGX 10,000)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sub-amount">Amount (UGX)</label>
+                                <input type="number" id="sub-amount" name="amount" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sub-battalion">Battalion/District</label>
+                            <input type="text" id="sub-battalion" name="battalion">
+                        </div>
+                        <div class="form-group">
+                            <label for="sub-company">Company Unit (if known)</label>
+                            <input type="text" id="sub-company" name="company">
+                        </div>
+                        
+                        <div class="payment-options">
+                            <h3>Select Payment Method</h3>
+                            <div class="payment-option">
+                                <input type="radio" id="pay-mobile" name="payment" value="mobile" checked>
+                                <label for="pay-mobile">Mobile Money</label>
+                                <div class="payment-details" id="mobile-details">
+                                    <p>You will receive payment instructions via SMS after submitting this form</p>
+                                </div>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="pay-card" name="payment" value="card">
+                                <label for="pay-card">Credit/Debit Card</label>
+                                <div class="payment-details" id="card-details">
+                                    <div class="card-form">
+                                        <div class="form-group">
+                                            <label for="card-number">Card Number</label>
+                                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="card-expiry">Expiry Date</label>
+                                                <input type="text" id="card-expiry" placeholder="MM/YY">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="card-cvv">CVV</label>
+                                                <input type="text" id="card-cvv" placeholder="123">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="card-name">Name on Card</label>
+                                            <input type="text" id="card-name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="sub-receipt" name="receipt" checked>
+                            <label for="sub-receipt">Email me a payment receipt</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Proceed to Payment</button>
+                    </form>
+                </div>
+            </article>
+
+            <article>
+                <h2>Subscription FAQs</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">When are subscriptions due?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Annual subscriptions are due at the beginning of each calendar year (January). New members joining during the year pay a prorated amount.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What do my subscription fees support?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Subscription fees support Brigade activities at all levels: 40% remains with your local company, 30% supports battalion/district programs, 20% goes to regional initiatives, and 10% supports national administration and programs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I pay in installments?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, installment payments can be arranged through your local company treasurer. Please discuss payment plans with your unit leader.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How do I get a receipt for my payment?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>For online payments, receipts are automatically emailed. For mobile money or bank payments, send proof of payment to finance@bgbu.org to receive a receipt. Cash payments should be accompanied by an immediate receipt from the receiving officer.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What if I can't afford the subscription fee?<span class="toggle-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>BGBU never wants finances to prevent participation. Fee waivers and scholarships are available. Contact your unit leader or email membership@bgbu.org to confidentially discuss options.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: finance@bgbu.org</p>
+                <p>Phone: +256 123 456 789</p>
+                <p>Address: BGBU National Office, Kampala, Uganda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About BGBU</a></li>
+                    <li><a href="membership.html">Become a Member</a></li>
+                    <li><a href="subscription.html">Pay Subscription</a></li>
+                    <li><a href="conference.html">Annual Conference</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Boys' and Girls' Brigade of Uganda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
